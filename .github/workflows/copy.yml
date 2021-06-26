@@ -1,17 +1,15 @@
 name: Copy file
-
 on:
   push:
     branches: [ gh-pages ]
   pull_request:
-    branches: [ main ]
+    branches: [ gh-pages ]
 
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: List
         run: |
