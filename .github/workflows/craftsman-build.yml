@@ -52,4 +52,4 @@ jobs:
           FOLDER: deploy_dist/craftsman
       - name: Listing
         run: |
-          ls - l
+          ls
