@@ -50,4 +50,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAGES }}
           BRANCH: gh-pages
           FOLDER: deploy_dist/craftsman
-          
+      - name: Listing
+        run: |
+          ls - l
