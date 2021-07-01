@@ -1,5 +1,5 @@
 [![github pages](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml/badge.svg)](httpshttps://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml)
-
+ 
 # Craftsman
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
