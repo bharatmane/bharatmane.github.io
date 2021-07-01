@@ -21,7 +21,6 @@ jobs:
           -Dsonar.organization=craftsmanship
           -Dsonar.projectKey=bharatmane_bharatmane.github.io
           -Dsonar.python.coverage.reportPaths=coverage.xml
-          -Dsonar.sources=lib/
           -Dsonar.verbose=true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
