@@ -25,6 +25,9 @@ jobs:
       - name: Build production website
         run: npm run build:ci
       
+      - name: Run Codacy Analysis CLI
+        uses: codacy/codacy-analysis-cli-action@master
+      
       - name: Make copy of index.html 
         run: |
           chmod u+x "${GITHUB_WORKSPACE}/copyfile.sh"
