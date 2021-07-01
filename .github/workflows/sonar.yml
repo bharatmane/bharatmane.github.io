@@ -2,17 +2,9 @@ name: Sonar
 
 on:
   push:
-    branches: [ master, main ]
-    paths-ignore:
-      - '**.md'
-      - 'Assets/**'
-      - '.github/**'
+    branches: [ main ]
   pull_request:
-    types: [opened, synchronize, reopened]
-    paths-ignore:
-      - '**.md'
-      - 'Assets/**'
-      - '.github/**'
+    branches: [ main ]
     
 jobs:
   build:
