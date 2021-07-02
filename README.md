@@ -1,10 +1,13 @@
-[![github pages](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml)
- 
- [![CodeQL](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/CodeQL.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/CodeQL.yml)
- 
+<h1 align="center">
+  <br />
+    Bharat Mane
+  <hr />
+   
+[![Deployment](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml)
+[![CodeQL](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/CodeQL.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/CodeQL.yml)
 [![Sonar](https://github.com/sandeshkota/DesignPatterns/actions/workflows/sonar.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/sonar.yml)
   
- [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=bharatmane_bharatmane.github.io&metric=ncloc)](https://sonarcloud.io/dashboard?id=bharatmane_bharatmane.github.io)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=bharatmane_bharatmane.github.io&metric=ncloc)](https://sonarcloud.io/dashboard?id=bharatmane_bharatmane.github.io)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=bharatmane_bharatmane.github.io&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=bharatmane_bharatmane.github.io)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=bharatmane_bharatmane.github.io&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=bharatmane_bharatmane.github.io)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=bharatmane_bharatmane.github.io&metric=security_rating)](https://sonarcloud.io/dashboard?id=bharatmane_bharatmane.github.io)
