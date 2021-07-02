@@ -3,7 +3,7 @@
     Bharat Mane
   <hr />
    
-[![github pages](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml)
+[![Deployment](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml)
 [![CodeQL](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/CodeQL.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/CodeQL.yml)
 [![Sonar](https://github.com/sandeshkota/DesignPatterns/actions/workflows/sonar.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/sonar.yml)
   
