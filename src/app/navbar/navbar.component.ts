@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class NavbarComponent {
+  
+  constructor() { 
+    // This is intentional
   }
 
 }
+
