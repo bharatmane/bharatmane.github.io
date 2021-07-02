@@ -16,15 +16,15 @@
       <div class="relative">
         <!-- PORTFOLIO FILTER -->                    
         <div class="port-filter text-center text-left-767">
-          <a href="#" class="filter active" data-filter="*">2021</a>
-          <a href="#" class="filter" data-filter=".development">2020</a>
-          <a href="#" class="filter" data-filter=".design">2019</a>
-          <a href="#" class="filter" data-filter=".photography">2019</a>
+          <a href="#" class="filter active" data-filter=".2021">2021</a>
+          <a href="#" class="filter" data-filter=".2020">2020</a>
+          <a href="#" class="filter" data-filter=".2019">2019</a>
+          <a href="#" class="filter" data-filter=".2018">2018</a>
         </div>                    
                 
         <ul  class="port-grid display-hover-on-mobile port-grid-3 masonry clearfix" id="items-grid">
-        <li *ngFor="let quote of array_quotes" role="button" class="port-item mix design">
-            <img src="{{quote}}" alt="quote">
+        <li *ngFor="let quote of quotes" role="button" [ngClass]="'port-item mix ' + quote.year">
+            <img src="{{quote.quoteUrl}}" alt="quote">
         </li>
         </ul>
       </div>
