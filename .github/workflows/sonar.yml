@@ -19,6 +19,7 @@ jobs:
       with:
         args: >
           -Dsonar.organization=craftsmanship
+          -Dsonar.projectKey=bharatmane_bharatmane.github.io
           -Dsonar.python.coverage.reportPaths=coverage.xml
           -Dsonar.verbose=true
       env:
