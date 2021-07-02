@@ -903,7 +903,6 @@ support for no js
 		-webkit-transform: translateX(-50%) !important;
 		-ms-transform: translateX(-50%) !important;
 		transform: translateX(-50%) !important;
-		-transform: translateZ(0);
 	}
 	.hide-0-736 {
 		display:none;
