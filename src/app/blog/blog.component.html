@@ -1,0 +1,54 @@
+<div class="page-title-cont page-title-small grey-light-bg plr-30 " style="padding-bottom: 20px;">
+    <div class="relative container align-left">
+      <div class="row">
+        
+        <div class="col-md-8">
+          <h1 class="page-title" style="margin-top: 10px;">Blogs</h1>
+        </div>
+        
+      </div>
+    </div>
+</div>
+<div class="grey-light-bg plr-30 plr-0-767 clearfix pb-50 ">    
+    <div class="white-bg plr-30 pt-50 pb-30">
+        <div class="row">
+            <ng-container *ngFor="let post of blogPosts.posts" >
+                <div class="col-sm-6 col-md-4 col-lg-4 pb-70">
+                    <div class="post-prev-img">
+                        <div class="lightbox-item">
+                            <a href="{{post.Url}}" class="lightbox">
+                                <div class="port-img-overlay">
+                                    <img class="port-main-img" src="{{post.featured_image}}" alt="img">
+                                </div>
+                                 <div class="port-overlay-cont">
+                                    <div class="port-btn-cont">
+                                        <div aria-hidden="true" class="icon_link"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="post-prev-title">
+                        <h3><a href="{{post.Url}}" target="_blank">{{post.title}}</a></h3>
+                    </div>
+
+                    <div class="post-prev-info">
+                        {{post.Date}} &nbsp; @b.Date.Day<span class="slash-divider">/</span>BHARAT MANE
+                    </div>
+
+                    <div class="post-prev-text" [innerHTML]="post.excerpt">
+
+                    </div>
+
+                    <div class="post-prev-more-cont clearfix">
+                        <div class="post-prev-more left">
+                            <a href="{{post.Url}}" target="_blank" class="blog-more">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
