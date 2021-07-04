@@ -9,7 +9,7 @@ export class BlogService {
 private subject= new Subject<any>();
 
   constructor(private httpClient:HttpClient) { }
-  baseUrl = "http://public-api.wordpress.com/rest/";
+  baseUrl = "https://public-api.wordpress.com/rest/";
   postUrl = "v1/sites/bharatmane.wordpress.com/posts";
 
   getBlogs()
