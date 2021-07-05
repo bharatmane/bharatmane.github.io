@@ -7,8 +7,6 @@ export class BlogPost
     public content:string;
     public excerpt:string;
     public featuredImage:string;
-    
-
 
     constructor(id:BigInteger,date:Date,title:string,url:string,content:string,excerpt:string, featuredImage:string)
     {
