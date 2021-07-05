@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Quote } from '../models/quote.model';
 
 @Component({
@@ -8,12 +8,8 @@ import { Quote } from '../models/quote.model';
 })
 
 
-export class QuotesComponent implements OnInit {
-  constructor() { }
-
-  ngOnInit(): void {
-
-  }
+export class QuotesComponent {
+  
   quotes:Quote[] = [
   new Quote('https://lh3.googleusercontent.com/z8AW-dQDnl7qvM5YICWny_xLPba7P4c08cY6dECp54PYHzoLGUW0gS8-nmGrtNDfWcVnQfu_OV8f293IoC7IGJ01AMHwKbDy_Ow0M-3BQ1yrtD0SArUDktN_9hwl9e_X1PNfyk-eN-g=w1920-h1080','2021',''),
   new Quote('https://lh3.googleusercontent.com/nPeS24ZDeDf8rMzd6W8M4ysJOnUcK_pilCEnq3tCj7E0w6HQu7EdVswljmhrQIB_ErA_Ag3SuUzkbRNeWtjMhDkSFxN-KkRPvgxJUC3XvSxDBUh9HYESbG3A7nJMly7cd0_7TPAVMEY=w1920-h1080','2021',''),
