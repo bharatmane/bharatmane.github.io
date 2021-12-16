@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:ci":"ng build --prod --base-href /"
+    "build:ci": "ng build --prod --base-href /"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~12.0.5",
     "@angular/platform-browser-dynamic": "~12.0.5",
     "@angular/router": "~12.0.5",
+    "angular-turnjs": "^1.0.4",
+    "flip-book": "^1.9.9",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
