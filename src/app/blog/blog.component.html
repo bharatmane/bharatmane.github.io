@@ -9,46 +9,56 @@
       </div>
     </div>
 </div>
+
 <div class="grey-light-bg plr-30 plr-0-767 clearfix pb-50 ">    
     <div class="white-bg plr-30 pt-50 pb-30">
-        <div class="row">
-            <ng-container *ngFor="let post of blogPosts.posts" >
-                <div class="col-sm-6 col-md-4 col-lg-4 pb-70">
-                    <div class="post-prev-img">
-                        <div class="lightbox-item">
-                            <a href="{{post.URL}}" class="lightbox" target="_blank" rel=noopener>
-                                <div class="port-img-overlay">
-                                    <img class="port-main-img" src="{{post.featured_image}}" alt="img">
+        <ngx-masonry [options]="masonryOptions" style="" [ordered]="true" (itemsLoaded)="itemsLoaded()">
+            <div ngxMasonryItem *ngFor="let post of allPost;index as idx" style="width: 30%;">
+              
+                <div class="post-prev-img">
+                    <div class="lightbox-item">
+                        <a href="{{post.url}}" class="lightbox" target="_blank" rel=noopener>
+                            <div class="port-img-overlay">
+                                <img class="port-main-img" src="{{post.featuredImage}}" alt="img">
+                            </div>
+                             <div class="port-overlay-cont">
+                                <div class="port-btn-cont">
+                                    <div aria-hidden="true" class="icon_link"></div>
                                 </div>
-                                 <div class="port-overlay-cont">
-                                    <div class="port-btn-cont">
-                                        <div aria-hidden="true" class="icon_link"></div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="post-prev-title">
-                        <h3><a href="{{post.URL}}" target="_blank" rel=noopener>{{post.title}}</a></h3>
-                    </div>
-
-                    <div class="post-prev-info">
-                        {{post.Date}} &nbsp; @b.Date.Day<span class="slash-divider">/</span>BHARAT MANE
-                    </div>
-
-                    <div class="post-prev-text" [innerHTML]="post.excerpt">
-
-                    </div>
-
-                    <div class="post-prev-more-cont clearfix">
-                        <div class="post-prev-more left">
-                            <a href="{{post.URL}}" target="_blank" rel=noopener class="blog-more">READ MORE</a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </ng-container>
+
+
+                <div class="post-prev-title">
+                    <h3><a href="{{post.url}}" target="_blank" rel=noopener>{{(post.title.length>30)? (post.title | slice:0:30)+'..':(post.title)}}</a></h3>
+                </div>
+
+                <div class="post-prev-info">
+                    {{post.date | date:'MMM yy'}}<span class="slash-divider">/</span>BHARAT MANE
+                </div>
+
+                <div class="post-prev-text" [innerHTML]="post.excerpt">
+
+                </div>
+
+                <div class="post-prev-more-cont clearfix">
+                    <div class="post-prev-more left">
+                        <a href="{{post.url}}" target="_blank" rel=noopener class="blog-more">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+          </ngx-masonry>
+        <div class="row masonry">
+
+           
+            
+                <div *ngFor="let post of allPost"  class="col-sm-6 col-md-4 col-lg-4 pb-70">
+                    
+                </div>
+            
+            
         </div>
     </div>
 </div>

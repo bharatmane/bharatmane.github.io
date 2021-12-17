@@ -1,32 +1,33 @@
 <div class="page-title-cont page-title-small grey-light-bg plr-30 " style="padding-bottom: 20px;">
-    <div class="relative container align-left">
-      <div class="row">
-        
-        <div class="col-md-8">
-          <h1 class="page-title page-title-margin" >QUOTES</h1>
-        </div>
-        
+  <div class="relative container align-left">
+    <div class="row">
+
+      <div class="col-md-8">
+        <h1 class="page-title page-title-margin">QUOTES</h1>
       </div>
+
     </div>
   </div>
-<div class="grey-light-bg plr-30 plr-0-767 pb-50 clearfix">    
-    <!-- COTENT CONTAINER -->
-    <div class="white-bg plr-30 pt-50 pb-30">
-    
-      <div class="relative">
-        <!-- PORTFOLIO FILTER -->                    
-        <div class="port-filter text-center text-left-767">
-          <a href="#" class="filter active" data-filter=".2021">2021</a>
-          <a href="#" class="filter" data-filter=".2020">2020</a>
-          <a href="#" class="filter" data-filter=".2019">2019</a>
-          <a href="#" class="filter" data-filter=".2018">2018</a>
-        </div>                    
-                
-        <ul  class="port-grid display-hover-on-mobile port-grid-3 masonry clearfix" id="items-grid">
-        <li *ngFor="let quote of quotes" role="button" [ngClass]="'port-item mix ' + quote.year">
-            <img src="{{quote.quoteUrl}}" alt="quote">
-        </li>
-        </ul>
+</div>
+<div class="grey-light-bg plr-30 plr-0-767 pb-50 clearfix">
+  <!-- COTENT CONTAINER -->
+  <div class="white-bg plr-30 pt-50 pb-30">
+
+    <div class="relative">
+      <!-- PORTFOLIO FILTER -->
+      <div class="port-filter text-center text-left-767">
+        <a href="javascript:void(0);" class="filter" (click)="showQuotesForYear(2021, $event)" >2021</a>
+        <a href="javascript:void(0);" class="filter" (click)="showQuotesForYear(2020, $event)" >2020</a>
+        <a href="javascript:void(0);" class="filter"(click)="showQuotesForYear(2019, $event)"  >2019</a>
+        <a href="javascript:void(0);" class="filter" (click)="showQuotesForYear(2018, $event)" >2018</a>
       </div>
-      </div>
+
+      <ngx-masonry [options]="masonryOptions" style="text-align: center;" >
+        <div ngxMasonryItem *ngFor="let quote of quotes;" style="width: 30%;" [ngClass]="'port-item mix ' + quote.year"
+          role="button">
+          <img src="{{quote.quoteUrl}}" alt="quote" class="mb-10">
+        </div>
+      </ngx-masonry>
+    </div>
+  </div>
 </div>
