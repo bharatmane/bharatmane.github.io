@@ -1,3 +1,21 @@
+desandro-matches-selector
+MIT
+
+ev-emitter
+MIT
+
+fizzy-ui-utils
+MIT
+
+get-size
+MIT
+
+masonry-layout
+MIT
+
+outlayer
+MIT
+
 zone.js
 MIT
 The MIT License
