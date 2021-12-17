@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "copyAssets": "cp -r src/CNAME dist/ || copy /Y src/CNAME dist/ ",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
