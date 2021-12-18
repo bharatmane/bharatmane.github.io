@@ -11215,3 +11215,12 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
 .shop-ad-height {
   height:200px;
 }
+.overlay-button
+{
+    position: absolute;
+    left: 24px;
+    bottom: 20px;
+    background: #fff;
+    padding: 17px 20px 15px 20px;
+    min-width: 160px;
+}
