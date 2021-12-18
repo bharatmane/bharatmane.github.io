@@ -10,6 +10,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { FooterComponent } from './footer/footer.component';
 import { BlogComponent } from './blog/blog.component';
 import { NgxMasonryModule } from 'ngx-masonry';
+import { KidCalendarComponent } from './kid-calendar/kid-calendar.component';
 
 
 
@@ -20,7 +21,8 @@ import { NgxMasonryModule } from 'ngx-masonry';
     NavbarComponent,
     QuotesComponent,
     FooterComponent,
-    BlogComponent
+    BlogComponent,
+    KidCalendarComponent
   ],
   imports: [
     BrowserModule,

@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "copyAssets": "cp -r src/CNAME dist/ || copy /Y src/CNAME dist/ ",
-    "build": "ng build",
+    "build": "ng build",  
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:ci": "ng build --prod --base-href /"
+    "build:ci": "ng build --prod --base-href /",
+    "copyAssets": "cp -r src/CNAME dist/ || copy /Y src/CNAME dist/ "
   },
   "private": true,
   "dependencies": {

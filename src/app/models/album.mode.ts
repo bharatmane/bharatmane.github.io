@@ -7,6 +7,7 @@ export class Album
     public year:number;
     public category:string;
     public coverImageUrl:string;
+    public opened?: boolean;
     public items:AlbumItem[];
 
     constructor(id:number,name:string,year:number,category:string,coverImageUrl:string,items:AlbumItem[])
@@ -19,5 +20,20 @@ export class Album
        this.items = items;
     }
 }
+
+export class AlbumImage
+{
+    public albumId:number;
+    public isCoverImage:boolean;
+    public imageUrl:string;
+    constructor(albumId:number,isCoverImage:boolean,url:string)
+    {
+        this.albumId = albumId;
+        this.isCoverImage = isCoverImage;
+        this.imageUrl = url;
+
+    }
+}
+
 
    
