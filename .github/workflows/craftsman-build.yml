@@ -25,6 +25,9 @@ jobs:
       - name: Build production website
         run: npm run build:ci
       
+      - name: Copy CNAME file
+        run: npm run copyAssets
+      
       - name: Make copy of index.html 
         run: |
           chmod u+x "${GITHUB_WORKSPACE}/copyfile.sh"
