@@ -23,8 +23,7 @@
       </div>
 
       <ngx-masonry [options]="masonryOptions" style="text-align: center;" >
-        <div ngxMasonryItem *ngFor="let quote of quotes;" style="width: 30%;" [ngClass]="'port-item mix ' + quote.year"
-          role="button">
+        <div ngxMasonryItem *ngFor="let quote of quotes;" class="masonry-item-card" >
           <img src="{{quote.quoteUrl}}" alt="quote" class="mb-10">
         </div>
       </ngx-masonry>
