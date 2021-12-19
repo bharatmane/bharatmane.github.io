@@ -11212,6 +11212,16 @@ ul#flickr-feeds li a, ul#flickr-sfeeds li a img {
     height:320px;
   }
 }
+@media (min-width:360px){
+  .masonry-item-card{
+    width:90%;
+  }
+}
+@media(min-width:768px){
+  .masonry-item-card{
+    width:32%;
+  }
+}
 .shop-ad-height {
   height:200px;
 }
