@@ -1,1 +1,44 @@
-<p>book works!</p>
+<div class="page-title-cont page-title-small grey-light-bg plr-30 " style="padding-bottom: 20px;">
+    <div class="relative container align-left">
+      <div class="row">
+        
+        <div class="col-md-8">
+          <h1 class="page-title page-title-margin">Books</h1>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+<div class="grey-light-bg plr-30 plr-0-767 clearfix pb-50 ">    
+    <div class="white-bg plr-30 pt-50 pb-30">
+        <ngx-masonry [options]="masonryOptions" style="" [ordered]="true" (itemsLoaded)="itemsLoaded()">
+            <div ngxMasonryItem *ngFor="let book of allBooks;index as idx" class="masonry-item-card">
+              
+                <div class="post-prev-img">
+                    <div class="lightbox-item">
+                        <a href='{{book.buyingURL}}' class="lightbox" target="_blank" rel=noopener>
+                            <div class="port-img-overlay">
+                                <img class="port-main-img" src='{{"/assets/images/books/" + book.coverPageUrl}}' alt="img">
+                            </div>
+                             <div class="port-overlay-cont">
+                                <div class="port-btn-cont">
+                                    <div aria-hidden="true" class="icon_link"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="post-prev-title">
+                    <h3><a href="{{book.buyingURL}}" target="_blank" rel=noopener>{{(book.title.length>30)? (book.title | slice:0:30)+'..':(book.title)}}</a></h3>
+                </div>
+
+                <div class="post-prev-text" [innerHTML]="book.description">
+
+                </div>
+            </div>
+          </ngx-masonry>
+    </div>
+</div>
