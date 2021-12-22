@@ -12,6 +12,7 @@ import { BlogComponent } from './blog/blog.component';
 import { NgxMasonryModule } from 'ngx-masonry';
 import { KidCalendarComponent } from './kid-calendar/kid-calendar.component';
 import { BookComponent } from './book/book.component';
+import { StoriesComponent } from './stories/stories.component';
 
 
 
@@ -24,7 +25,8 @@ import { BookComponent } from './book/book.component';
     FooterComponent,
     BlogComponent,
     KidCalendarComponent,
-    BookComponent
+    BookComponent,
+    StoriesComponent
   ],
   imports: [
     BrowserModule,

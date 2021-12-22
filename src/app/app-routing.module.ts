@@ -5,6 +5,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { BlogComponent } from './blog/blog.component';
 import { KidCalendarComponent } from './kid-calendar/kid-calendar.component';
 import { BookComponent} from './book/book.component';
+import { StoriesComponent } from './stories/stories.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'quotes',component:QuotesComponent},
   {path:'blog',component:BlogComponent},
   {path:'calendar',component:KidCalendarComponent},
-  {path:'book',component:BookComponent}
+  {path:'book',component:BookComponent},
+  {path:'stories',component:StoriesComponent}
 ];
 
 @NgModule({
