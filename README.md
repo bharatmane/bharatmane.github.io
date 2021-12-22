@@ -6,9 +6,6 @@
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=bharatmane_bharatmane.github.io)](https://sonarcloud.io/summary/new_code?id=bharatmane_bharatmane.github.io)
  
   
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bharatmane_bharatmane.github.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=bharatmane_bharatmane.github.io)
-  
-  
 [![Deployment](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/craftsman-build.yml)
 [![CodeQL](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/CodeQL.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/CodeQL.yml)
 [![Sonar](https://github.com/sandeshkota/DesignPatterns/actions/workflows/sonar.yml/badge.svg)](https://github.com/bharatmane/bharatmane.github.io/actions/workflows/sonar.yml)
