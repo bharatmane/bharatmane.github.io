@@ -12,7 +12,7 @@
 
 <div class="grey-light-bg plr-30 plr-0-767 clearfix pb-50 ">    
     <div class="white-bg plr-30 pt-50 pb-30">
-        <ngx-masonry [options]="masonryOptions" style="" [ordered]="true" (itemsLoaded)="itemsLoaded()">
+        <ngx-masonry [options]="masonryOptions" [ordered]="true" (itemsLoaded)="itemsLoaded()">
             <div ngxMasonryItem *ngFor="let post of allPost;index as idx" class="masonry-item-card">
               
                 <div class="post-prev-img">
