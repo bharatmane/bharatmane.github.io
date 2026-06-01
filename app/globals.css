@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px; /* nav height */
+}
+
+/* Hide default cursor on pointer:fine (mouse) devices — custom cursor takes over */
+@media (pointer: fine) {
+  html, html * {
+    cursor: none !important;
+  }
+}
+
+body {
+  background-color: #faf9f6;
+  color: #1c1917;
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle grain texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    font-family: var(--font-cormorant);
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  .content-width {
+    @apply max-w-content mx-auto px-6 md:px-10;
+  }
+}
